@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+:root {
+    --unavailable: #f02233;
+    --available: #36e010;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #cedd16 50%, #1fd9bd 50%);
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+#wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#right {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+}
+
+#cookie-container img {
+    width: 100%;
+    -moz-transition: all .1s ease-out;
+    -o-transition: all .1s ease-out;
+    -webkit-transition: all .1s ease-out;
+}
+
+#cookie-container img:hover {
+    cursor: pointer;
+}
+
+#cookie-container img:active {
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -o-transform: scale(.8);
+}
+
+#cookie-value-container {
+    display: block;
+    text-shadow: 4px 3px 0px rgb(21, 152, 250);
+    width: 100%;
+    white-space: nowrap;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+ul li {
+	border-radius: 5px;
+	box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1),
+    	 -2px -2px 5px 0 rgba(0,0,0,.1),
+    	2px 2px 5px 0 rgba(0,0,0,.1),
+    	-2px 2px 5px 0 rgba(0,0,0,.1);
+	margin-bottom: 15px;
+	padding: 15px 40px;
+    font-weight: 500;
+    color: #214b79;
+    -moz-transition: all .1s ease-out;
+    -o-transition: all .1s ease-out;
+    -webkit-transition: all .1s ease-out;
+}
+
+ul li:hover {
+    cursor: pointer;
+}
+
+ul li:active {
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    -o-transform: scale(.9);
+}
+
+.upgrade--unavailable {
+    border-left: 10px solid var(--unavailable);
+	border-right: 10px solid var(--unavailable);
+}
+
+.upgrade--available {
+    border-left: 10px solid var(--available);
+	border-right: 10px solid var(--available);
+}
+
+.upgrade-price {
+    margin-left: 15px;
+}
+
+#multiplier-text {
+    font-weight: 500;
+    text-align: center;
+}
